@@ -5,7 +5,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.*;
 
-public class Ponketmon {
+class Ponketmon {
 
     @Test
     void solution() {
@@ -15,6 +15,6 @@ public class Ponketmon {
             set.add(num);
         }
 
-        Assertions.assertSame(Math.min(set.size(), (nums.length / 2)), 2);
+        Assertions.assertSame(2, Math.min(set.size(), (nums.length / 2)));
     }
 }

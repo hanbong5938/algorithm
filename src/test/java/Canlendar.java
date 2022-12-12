@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Canlendar2016 {
+class Calendar {
 
     @Test
     void solution() {
@@ -17,6 +17,6 @@ public class Canlendar2016 {
 
         final int index = ((answer + b) % weeks.length) - 1;
 
-        Assertions.assertSame(weeks[index == -1 ? 6 : index], "TUE");
+        Assertions.assertSame("TUE", weeks[index == -1 ? 6 : index]);
     }
 }
