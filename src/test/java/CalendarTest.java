@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class Calendar {
+class CalendarTest {
 
     @Test
     void solution() {
