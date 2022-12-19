@@ -10,7 +10,6 @@ class TreatStringTest {
 
         String s = "a234";
         boolean answer = false;
-        String temp = s.replaceAll("[A-Za-z]", "");
         int length = s.length();
         if ((s.replaceAll("[A-Za-z]", "").length() == length) && (length == 4 || length == 6)) {
             answer = true;
