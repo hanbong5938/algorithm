@@ -3,7 +3,7 @@ package one;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class CountMinorityTest {
+class CountPrimeNumberTest {
 
     @Test
     void test() {
