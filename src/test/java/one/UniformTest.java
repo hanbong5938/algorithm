@@ -31,11 +31,11 @@ class UniformTest {
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] == 0) {
                 if (i > 1 && arr[i - 1] == 2) {
-                    arr[i - 1] = 1;
-                    arr[i] = 1;
+                    arr[i - 1]--;
+                    arr[i]++;
                 } else if (i + 1 < arr.length && arr[i + 1] == 2) {
-                    arr[i + 1] = 1;
-                    arr[i] = 1;
+                    arr[i + 1]--;
+                    arr[i]++;
                 }
             }
             if (arr[i] > 0) {
