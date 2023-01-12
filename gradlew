@@ -213,7 +213,7 @@ fi
 
 # Use "xargs" to parse quoted args.
 #
-# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
+# With -n1 it outputs programmers.one arg per line, with the quotes and backslashes removed.
 #
 # In Bash we could simply go:
 #
