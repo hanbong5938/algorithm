@@ -13,8 +13,6 @@ class NGameTest {
         Assertions.assertEquals("13579BDF01234567", solution(16, 16, 2, 2));
     }
 
-    private static final String[] arr = {"A", "B", "C", "D", "E", "F"};
-
     public String solution(int n, int t, int m, int p) {
         StringBuilder answer = new StringBuilder();
         String s = getStr(n, t, m);
