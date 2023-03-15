@@ -31,10 +31,6 @@ class CompressTest {
                 add(additional, stack, pop.toString());
                 answer.add(alphabet.indexOf(pop.toString()) + 1);
             } else {
-                // K -> KA
-                // A -> AK
-                // KA -> KAO
-                // O
                 while (!stack.isEmpty() && additional.contains(pop + stack.peek())) {
                     pop.append(stack.pop());
                 }
