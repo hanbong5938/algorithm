@@ -19,12 +19,8 @@ class ChangeNumberTest {
             int a = getDivide(x, dp, i, 2);
             int b = getDivide(x, dp, i, 3);
             int c = aboveUnderX(x, i - n) ? dp[i - n] : Integer.MAX_VALUE;
-
-            // 숫자 i를 만들기 위한 최소 방법을 찾음
             int d = Math.min(Math.min(a, b), c);
 
-            // 만들 수 있으면 d+1 저장
-            // 만들 수 없다면 MAX 저장
             dp[i] = d == Integer.MAX_VALUE ? Integer.MAX_VALUE : d + 1;
         }
         return dp[y] == Integer.MAX_VALUE ? -1 : dp[y];
