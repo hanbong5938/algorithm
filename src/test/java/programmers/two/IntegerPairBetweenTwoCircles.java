@@ -4,10 +4,6 @@ package programmers.two;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Stack;
-
 class IntegerPairBetweenTwoCircles {
 
     @Test
