@@ -19,8 +19,8 @@ class PickMineralTest {
         int answer = 0;
 
         int pickCount = 0;
-        for (int i = 0; i < picks.length; i++) {
-            pickCount += picks[i];
+        for (int pick : picks) {
+            pickCount += pick;
         }
 
         PriorityQueue<List<Integer>> mineralGroupQueue = new PriorityQueue<>(Comparator.comparingInt((List<Integer> group) -> group.stream().mapToInt(Integer::intValue).sum()).reversed());
@@ -36,13 +36,11 @@ class PickMineralTest {
                 mineralGroup = new ArrayList<>();
             }
 
-            // 미네랄
             switch (minerals[i]) {
                 case "diamond" -> mineralGroup.add(25);
                 case "iron" -> mineralGroup.add(5);
                 case "stone" -> mineralGroup.add(1);
             }
-            ;
         }
 
         if (mineralGroupQueue.size() < pickCount) {
@@ -57,8 +55,8 @@ class PickMineralTest {
                     switch (i) {
                         case 0 -> answer += list.size();
                         case 1 -> {
-                            for (int j = 0; j < list.size(); j++) {
-                                if (list.get(j) == 25) {
+                            for (Integer integer : list) {
+                                if (integer == 25) {
                                     answer += 5;
                                 } else {
                                     answer += 1;
@@ -66,8 +64,8 @@ class PickMineralTest {
                             }
                         }
                         case 2 -> {
-                            for (int j = 0; j < list.size(); j++) {
-                                answer += list.get(j);
+                            for (Integer integer : list) {
+                                answer += integer;
                             }
                         }
                     }
