@@ -26,15 +26,15 @@ class EmoticonDiscountTest {
         return new int[]{EMOTICON_PLUS, TOTAL_SALES};
     }
 
-    private void getPrices(int[] emoticons, int[][] users, int cur, int[] rates) {
+    private void getPrices(int[] emoticons, int[][] users, int cur, int[] discounts) {
         if (cur == emoticons.length) {
-            updateAnswer(emoticons, users, rates);
+            updateAnswer(emoticons, users, discounts);
             return;
         }
 
         for (int discount : DISCOUNT) {
-            rates[cur] = discount;
-            getPrices(emoticons, users, cur + 1, rates);
+            discounts[cur] = discount;
+            getPrices(emoticons, users, cur + 1, discounts);
         }
     }
 
