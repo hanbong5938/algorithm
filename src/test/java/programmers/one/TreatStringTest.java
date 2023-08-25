@@ -5,15 +5,15 @@ import org.junit.jupiter.api.Test;
 
 class TreatStringTest {
 
-    @Test
-    void solution() {
+  @Test
+  void solution() {
 
-        String s = "a234";
-        boolean answer = false;
-        int length = s.length();
-        if ((s.replaceAll("[A-Za-z]", "").length() == length) && (length == 4 || length == 6)) {
-            answer = true;
-        }
-        Assertions.assertFalse(answer);
+    String s = "a234";
+    boolean answer = false;
+    int length = s.length();
+    if ((s.replaceAll("[A-Za-z]", "").length() == length) && (length == 4 || length == 6)) {
+      answer = true;
     }
+    Assertions.assertFalse(answer);
+  }
 }
